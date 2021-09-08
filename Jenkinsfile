@@ -26,14 +26,14 @@ pipeline{
             echo 'Build for dev'
             }
     }
-    stage('build for feature'){
+    stage('build for Feature'){
        when{
             expression{
                 BRANCH_NAME == 'feature'
             }
             }
        steps{
-            echo 'Build for feature'
+            echo 'Build for Feature'
             }
     }
    }
